@@ -10,8 +10,9 @@ import json
 
 from bs4 import BeautifulSoup
 
-user = "13758043773"
-password = "673773abc"
+#自行添加帐号密码或是输入change之后添加
+user = ""
+password = ""
 TOKEN = ""
 TOKEN_URL = "https://passport.baidu.com/v2/api/?getapi&tpl=pp&apiver=v3"
 INDEX_URL = "http://www.baidu.com/"
@@ -71,6 +72,7 @@ def start():
         print("网络问题 无法为您获取token,正在退出...")
         return
     return opener
+
 def main():
     try:
         opener = start()
@@ -130,6 +132,7 @@ def main():
             print(bar[1] + "遇到细节问题,签到失败!")
             continue
     print("签到完毕\n")
+
 if __name__ == "__main__":
     main()
     while True:
