@@ -2,7 +2,8 @@
 Using python spider to sign in baidu tieba
 
 ## 环境及需求
-    Python3
+    Python3   baidu.py
+    Python2.7 sign.py
 
 ## 功能介绍
  在百度贴吧上进行自动签到，可修改源码中的user和password进行默认登录，也可以在一次签到之后输入change来输入新的用户
